@@ -7,6 +7,8 @@ for (var i = 0; i < crimeinput.length; i++) {
 	if (!crimeinput[i].location_1) {
 		continue;
 	}
+	crimeinput[i].location_2 = location_1[1];
+	crimeinput[i].location_1 = location_1[0];
 	if (crimeinput[i].crm_cd_desc === 'TRAFFIC DR #') {
 		continue;
 	}
